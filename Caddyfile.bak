@@ -1,0 +1,7 @@
+http://pens-workfront.pittsburgh-penguins.com {
+    reverse_proxy /storage kong:8000
+    reverse_proxy /auth kong:8000
+    reverse_proxy /rest kong:8000
+    reverse_proxy /realtime kong:8000
+    reverse_proxy /functions kong:8000
+}
